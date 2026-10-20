@@ -1,0 +1,516 @@
+export const siteContent = {
+  brand: {
+    name: "KAARD CONSTRUCTION",
+    division: "CONSTRUCTION DIVISION OF KAARD INVESTMENTS",
+    slogan: "Quality, Tried and Tested",
+    tagline: "Precision Structural Steel, Commercial High-Rise, & Civil Infrastructure",
+    motherCompany: {
+      name: "Kaard Investments",
+      url: "https://www.kaardinvestments.co.zw",
+    },
+    colors: {
+      navy: "#0F2C52",
+      steel: "#58595B",
+      orange: "#E87722",
+      stone: "#F6F5F2",
+      carbon: "#0B0C0E",
+    },
+    logo: "/assets/kaard-logo.jpg",
+    logoTransparent: "/assets/kaard-logo-transparent.png",
+    contact: {
+      phone: "+263 77 515 7802",
+      whatsapp: "+263 77 515 7802",
+      email: "office@kaardinvestment.co.zw",
+      address: "Kaard Corporate Towers, 14 Steelworks Avenue, Industrial Zone, Harare",
+      hours: "Mon – Fri: 07:00 – 17:30 | Site Operations: 24/7",
+    },
+    accreditations: [
+      { name: "ISO 9001:2015", label: "Quality Management Certified" },
+      { name: "OHSAS 18001 / ISO 45001", label: "Occupational Safety Standard" },
+      { name: "Green Building Council", label: "Sustainable Structural Engineering" },
+      { name: "Steel Construction Institute", label: "Certified Heavy Steel Fabricator" },
+    ],
+  },
+
+  navigation: [
+    { label: "Overview", href: "#hero" },
+    { label: "Drone Recon", href: "#drone-recon" },
+    { label: "Current Projects", href: "#current-projects" },
+    { label: "Capabilities", href: "#capabilities" },
+    { label: "Transformation", href: "#transformation" },
+    { label: "Field Standards", href: "#workforce" },
+  ],
+
+  hero: {
+    badge: "KAARD INVESTMENTS // STRUCTURAL & CIVIL DIVISION",
+    titleLead: "Building the Future.",
+    titleEmphasis: "Quality, Tried and Tested.",
+    description:
+      "From bespoke structural steel framing to multi-storey commercial towers, Kaard Construction engineers iconic landmarks with Swiss architectural precision, unyielding safety, and certified durability.",
+    backgroundImage: "/assets/hero-flagship-hq.jpg",
+    secondaryImage: "/assets/gallery/dji-aerial-1.jpg",
+    metrics: [
+      { code: "01 // INDEX", label: "Safety Compliance", value: "100%" },
+      { code: "02 // ERECTED", label: "Structural Steel", value: "12,400+ T" },
+      { code: "03 // CAPACITY", label: "Floor Area Built", value: "48,500 m²" },
+      { code: "04 // PRECISION", label: "On-Schedule Delivery", value: "99.4%" },
+    ],
+  },
+
+  droneRecon: {
+    badge: "02 // LIVE FIELD TELEMETRY",
+    title: "Real Site Drone Telemetry & Aerial Recon",
+    subtitle:
+      "Continuous aerial telemetry feeds capturing structural progress, roof truss placement, and civil earthworks across active Kaard sites.",
+    feeds: [
+      {
+        id: "feed-1",
+        label: "01 // Aerial Recon Flight",
+        sublabel: "The Highlands Residential Enclave",
+        src: "/assets/videos/site-aerial-flight.mp4",
+        telemetry: { alt: "48.5m", speed: "3.4 m/s", gps: "17°48'21\"S 31°02'54\"E", camera: "4K HDR // 60fps" },
+        caption: "High-angle flyover documenting simultaneous multi-unit masonry and profiled roof sheeting installation.",
+      },
+      {
+        id: "feed-2",
+        label: "02 // Structural Roofing Scan",
+        sublabel: "Timber Truss & Sheeting Inspection",
+        src: "/assets/videos/site-roofing-drone.mp4",
+        telemetry: { alt: "22.0m", speed: "1.8 m/s", gps: "17°48'25\"S 31°02'58\"E", camera: "4K Tele // 60fps" },
+        caption: "Low-altitude inspection of dark-slate corrugated roof sheeting, ridge flashing, and structural tie-downs.",
+      },
+      {
+        id: "feed-3",
+        label: "03 // Site Perimeter Pan",
+        sublabel: "Logistics Hub & Masonry Staging",
+        src: "/assets/videos/site-progress-pan.mp4",
+        telemetry: { alt: "35.2m", speed: "2.6 m/s", gps: "17°48'18\"S 31°02'50\"E", camera: "Wide-Angle // 60fps" },
+        caption: "Panoramic sweep of boundary security perimeter, brickstaging bays, and delivery vehicular routing.",
+      },
+      {
+        id: "feed-4",
+        label: "04 // Civil Foundation Survey",
+        sublabel: "Substructure Excavation & Drainage Cells",
+        src: "/assets/videos/site-survey-clip.mp4",
+        telemetry: { alt: "29.8m", speed: "2.1 m/s", gps: "17°48'30\"S 31°03'05\"E", camera: "Survey Sensor // 60fps" },
+        caption: "Verification of foundation levels, underground services trenches, and storm water runoff grading.",
+      },
+    ],
+  },
+
+  editorialQuote: {
+    quote:
+      "True engineering leaves no margin for error. We weld structural integrity into every beam and stress-test every foundation until quality is undisputed.",
+    attribution: "Kaard Executive Engineering Board",
+    division: "Division of Kaard Investments // Technical Oversight",
+    coordinates: "REF: QC-SPEC-2026 // HARARE - JOHANNESBURG",
+  },
+
+  stats: [
+    {
+      id: "stat-1",
+      number: 100,
+      suffix: "%",
+      label: "Zero-Incident Safety Record",
+      subtext: "Strict OHSAS 18001 and ISO 45001 compliance enforced on every active site.",
+      index: "01 // PROTOCOL",
+    },
+    {
+      id: "stat-2",
+      number: 38,
+      suffix: "+",
+      label: "Commercial & Civil Landmarks",
+      subtext: "Turnkey delivery of corporate headquarters, industrial complexes, and civil works.",
+      index: "02 // SCALE",
+    },
+    {
+      id: "stat-3",
+      number: 12400,
+      suffix: " T",
+      label: "Heavy Structural Steel Fabricated",
+      subtext: "Custom high-tolerance I-beams and load-bearing columns fabricated in-house.",
+      index: "03 // TONNAGE",
+    },
+    {
+      id: "stat-4",
+      number: 99.4,
+      suffix: "%",
+      isDecimal: true,
+      label: "On-Schedule Handover Rate",
+      subtext: "Driven by synchronized supply-chain logistics and proprietary milestone tracking.",
+      index: "04 // RELIABILITY",
+    },
+  ],
+
+  capabilities: [
+    {
+      id: "steel-commercial",
+      index: "01 //",
+      title: "Structural Steel & Commercial High-Rise",
+      tagline: "Heavy I-Beam Framing & Monolithic Architecture",
+      description:
+        "High-tonnage structural steel erection, bespoke column connections, acoustic facade glazing, and multi-tier commercial tower construction engineered for generational durability.",
+      image: "/assets/hero-flagship-hq.jpg",
+      deliverables: [
+        "In-house 3D BIM detailing & automated beam fabrication",
+        "High-tensile moment connections & seismic cross-bracing",
+        "Turnkey curtain wall and solar-reflective facade integration",
+        "Comprehensive ultrasound and radiographic weld testing",
+      ],
+      specs: {
+        maxSpan: "Up to 60m Clear Spans",
+        steelGrade: "S355JR / Grade 50 Heavy Structural",
+        certification: "AISC & SANS 10162 Compliant",
+      },
+    },
+    {
+      id: "civil-infrastructure",
+      index: "02 //",
+      title: "Civil Engineering & Heavy Earthworks",
+      tagline: "Sub-Structure, Retaining & Site Platforms",
+      description:
+        "Master site earthworks, reinforced foundation piling, storm-water containment civil cells, retention walls, and heavy-duty arterial logistics roadways.",
+      image: "/assets/gallery/dji-aerial-1.jpg",
+      deliverables: [
+        "GPS-guided bulk excavation and deep foundation piling",
+        "Heavy stormwater catchment cells and culvert engineering",
+        "Industrial concrete paving with laser-screed flatness",
+        "Geotechnical soil stabilization and rock anchoring",
+      ],
+      specs: {
+        excavationCapacity: "25,000 m³ / month",
+        concreteClass: "30MPa – 50MPa Structural Mix",
+        compaction: "98% Mod AASHTO Certified",
+      },
+    },
+    {
+      id: "industrial-plants",
+      index: "03 //",
+      title: "Industrial Warehousing & Processing Plants",
+      tagline: "High-Volume Logistics Facilities & Hangars",
+      description:
+        "Turnkey distribution hubs, multi-bay processing warehouses, crane gantry integration, and insulated thermal roofing engineered for heavy logistics.",
+      image: "/assets/gallery/dji-aerial-5.jpg",
+      deliverables: [
+        "Clear-span portal frames exceeding 45m without center columns",
+        "Integrated overhead crane gantries up to 50-tonne capacity",
+        "Superflat jointless post-tensioned floor slabs",
+        "FM Global approved fire suppression and smoke ventilation",
+      ],
+      specs: {
+        eavesHeight: "Up to 16.5m Clear Height",
+        floorLoading: "80 kN/m² Point Load Rating",
+        envelope: "Composite insulated paneling with Class 1 fire rating",
+      },
+    },
+    {
+      id: "scaffolding-safety",
+      index: "04 //",
+      title: "Engineered Scaffolding & Specialized Access",
+      tagline: "Heavy Shoring, Site Banners & Perimeter Systems",
+      description:
+        "Certified multi-story scaffolding systems, heavy falsework shoring for deep concrete transfers, cantilevered access cradles, and prominent branded site perimeter containment.",
+      image: "/assets/site-scaffolding-banner.jpg",
+      deliverables: [
+        "Engineered modular ring-lock scaffolding systems",
+        "High-capacity concrete formwork and propping solutions",
+        "Weatherproof debris netting and high-wind structural banners",
+        "Daily certified scaffolding safety audits and load inspections",
+      ],
+      specs: {
+        loadRating: "Heavy Duty Class 6 (450 kg/m²)",
+        maxHeight: "Unrestricted with tied structural engineering",
+        standards: "BS EN 12810 / SANS 10085 Certified",
+      },
+    },
+    {
+      id: "turnkey-fitout",
+      index: "05 //",
+      title: "Corporate Fit-Outs & Modernization",
+      tagline: "Executive Interiors & Architectural Renovation",
+      description:
+        "Refining structural spaces into elite commercial environments. Acoustic ceiling baffles, bespoke architectural millwork, glass partition systems, and modernized building management services.",
+      image: "/assets/site-blueprint-mug-hd.jpg",
+      deliverables: [
+        "Executive boardrooms and collaborative open-plan floors",
+        "Acoustic partition walls and architectural timber panelling",
+        "Integrated smart lighting, HVAC zoning, and access control",
+        "Rapid-handover schedules with zero disruption to adjacent tenants",
+      ],
+      specs: {
+        fitoutClass: "Grade A Executive Finish",
+        greenRating: "LEED / Green Star Compliant Materials",
+        warranty: "24-Month Comprehensive Defect Liability",
+      },
+    },
+  ],
+
+  projects: [
+    {
+      id: "the-highlands-enclave",
+      title: "The Highlands Residential Enclave & Roofing Scheme",
+      category: "Residential & Roofing",
+      sector: "Turnkey Housing & Profiled Roofing",
+      location: "Harare North Precinct",
+      status: "Active Site Execution",
+      year: "2025 – 2026",
+      client: "Highland Real Estate Syndicate",
+      tonnage: "620 Tonnes Steel & Trusses",
+      sqm: "18,400 m²",
+      heroImage: "/assets/gallery/dji-aerial-1.jpg",
+      video: "/assets/videos/site-aerial-flight.mp4",
+      gallery: [
+        "/assets/gallery/dji-aerial-1.jpg",
+        "/assets/gallery/dji-aerial-2.jpg",
+        "/assets/gallery/dji-aerial-3.jpg",
+        "/assets/gallery/dji-aerial-4.jpg",
+        "/assets/flagship-corporate-exterior.jpg",
+      ],
+      brief:
+        "A 48-unit master-planned community featuring reinforced load-bearing masonry, engineered timber roof trusses, dark charcoal corrugated sheeting, and extensive stormwater retention civil cells.",
+      solution:
+        "Deployed simultaneous dual-team brickwork and crane-assisted timber truss rigging, maintaining millimetre-precise wall plate alignments and zero rain intrusion during the entire wet season.",
+      blueprintRef: "DWG-KRD-HGL-104",
+      stats: {
+        units: "48 Master Residences",
+        masonry: "1.2 Million Quality Bricks",
+        civilRoads: "2.4 km Paved Access",
+      },
+    },
+    {
+      id: "kaard-corporate-hq",
+      title: "Kaard Corporate Towers & Commercial Plaza",
+      category: "Commercial High-Rise",
+      sector: "Commercial Superstructure",
+      location: "Central Business District",
+      status: "Flagship Landmark",
+      year: "2025 – 2026",
+      client: "Kaard Investments",
+      tonnage: "1,850 Tonnes Steel",
+      sqm: "12,600 m²",
+      heroImage: "/assets/hero-flagship-hq.jpg",
+      gallery: [
+        "/assets/hero-flagship-hq.jpg",
+        "/assets/flagship-corporate-exterior.jpg",
+        "/assets/site-scaffolding-banner.jpg",
+      ],
+      brief:
+        "A monumental 6-storey glass and steel headquarters featuring exposed structural steel moment frames, cantilevered executive pods, and integrated Kaard Construction 3D architectural signage.",
+      solution:
+        "Engineered an ultra-rigid steel skeleton with vibration-damped floor plates and double-glazed low-emissivity curtain walling, delivering 35% thermal savings and breathtaking civic presence.",
+      blueprintRef: "DWG-KRD-HQ-001",
+      stats: {
+        levels: "6 Storeys + Basements",
+        structuralSteel: "1,850 T",
+        completionTime: "14 Months (Ahead of Target)",
+      },
+    },
+    {
+      id: "aeropark-logistics-park",
+      title: "AeroPark Logistics Hub & Distribution Warehouses",
+      category: "Industrial & Plants",
+      sector: "High-Bay Industrial Warehousing",
+      location: "Airport Logistics Corridor",
+      status: "Phase 02 Construction",
+      year: "2026",
+      client: "Trans-Continental Freight Logistics",
+      tonnage: "3,200 Tonnes Steel",
+      sqm: "24,000 m²",
+      heroImage: "/assets/gallery/dji-aerial-5.jpg",
+      video: "/assets/videos/site-roofing-drone.mp4",
+      gallery: [
+        "/assets/gallery/dji-aerial-5.jpg",
+        "/assets/gallery/dji-aerial-6.jpg",
+        "/assets/gallery/dji-aerial-7.jpg",
+        "/assets/drone-aerial-roofing.jpg",
+      ],
+      brief:
+        "Twin logistics distribution warehouses engineered for high-bay automated racking, laser-leveled jointless flooring, and continuous articulated truck transit docks.",
+      solution:
+        "Fabricated continuous 42m clear-span steel portals utilizing high-tensile S355 steel, coupled with insulated profiled sheeting and automated ridge smoke release ventilators.",
+      blueprintRef: "DWG-KRD-LOG-042",
+      stats: {
+        clearHeight: "15.5m Clear Span",
+        loadingDocks: "28 Automatic Bays",
+        energyRating: "Solar-Ready 500kW Array",
+      },
+    },
+    {
+      id: "southern-expressway-overpass",
+      title: "Southern Expressway Rail Overpass & Heavy Shoring",
+      category: "Civil Infrastructure",
+      sector: "Civil Bridge Works & Scaffolding",
+      location: "Southern Arterial Corridor",
+      status: "Structural Handover Complete",
+      year: "2025",
+      client: "Metropolitan Roads Authority",
+      tonnage: "2,400 Tonnes Steel",
+      sqm: "8,900 m²",
+      heroImage: "/assets/site-scaffolding-banner.jpg",
+      gallery: [
+        "/assets/site-scaffolding-banner.jpg",
+        "/assets/gallery/dji-aerial-7.jpg",
+        "/assets/gallery/dji-aerial-3.jpg",
+      ],
+      brief:
+        "Heavy-duty bridge shoring, elevated concrete pier scaffolding, and structural steel girder installation over active rail lines with zero corridor downtime.",
+      solution:
+        "Pre-assembled 65-tonne steel girder sections off-site and tandem-craned into place during night windows using high-precision laser alignment and Kaard heavy shoring systems.",
+      blueprintRef: "DWG-KRD-CIV-220",
+      stats: {
+        craneCapacity: "350-Tonne Tandem Lift",
+        corridorSafety: "100% Zero Disruption",
+        steelRating: "Corrosion Class C4 Marine-Grade",
+      },
+    },
+    {
+      id: "northgate-foundations",
+      title: "Northgate Commercial Logistics Hub & Foundations",
+      category: "Civil Infrastructure",
+      sector: "Foundations & Concrete Frame",
+      location: "Industrial West Zone",
+      status: "Substructure Phase",
+      year: "2026",
+      client: "Kaard Land & Logistics",
+      tonnage: "1,550 Tonnes Steel",
+      sqm: "15,200 m²",
+      heroImage: "/assets/gallery/dji-aerial-8.jpg",
+      video: "/assets/videos/site-survey-clip.mp4",
+      gallery: [
+        "/assets/gallery/dji-aerial-8.jpg",
+        "/assets/gallery/dji-aerial-4.jpg",
+        "/assets/gallery/dji-aerial-2.jpg",
+      ],
+      brief:
+        "Massive engineered sub-structure foundations, reinforced concrete ring beams, and high-spec masonry blockwork for multi-unit industrial facilities.",
+      solution:
+        "Utilized continuous concrete batching and automated rebar tying rigs to execute 3,800m³ of foundation pours within a 3-week meteorological dry window.",
+      blueprintRef: "DWG-KRD-FND-091",
+      stats: {
+        concreteVolume: "3,800 m³ Poured",
+        rebarTonnage: "420 T High-Yield Steel",
+        testCylinderStrength: "118% Above Specified MPa",
+      },
+    },
+    {
+      id: "metropolitan-skyline-cranes",
+      title: "Metropolitan Financial Center High-Rise Superstructure",
+      category: "Commercial High-Rise",
+      sector: "Structural Steel & Erection",
+      location: "Skyline Financial District",
+      status: "Active Superstructure",
+      year: "2026",
+      client: "Meridian Financial Holdings",
+      tonnage: "4,100 Tonnes Steel",
+      sqm: "31,000 m²",
+      heroImage: "/assets/hero-skyline.jpg",
+      gallery: [
+        "/assets/hero-skyline.jpg",
+        "/assets/hero-flagship-hq.jpg",
+        "/assets/flagship-corporate-exterior.jpg",
+      ],
+      brief:
+        "Tower crane erection and multi-story structural steel superstructure over deep concrete basements in a dense city center environment.",
+      solution:
+        "Implemented just-in-time steel delivery from our fabrication yard to crane hook, minimizing on-street staging and completing the primary frame 6 weeks ahead of target.",
+      blueprintRef: "DWG-KRD-SKL-310",
+      stats: {
+        levels: "18 Storeys",
+        cranesActive: "3 Heavy Tower Cranes",
+        safetyHours: "420,000 Man-Hours Lost-Time Free",
+      },
+    },
+  ],
+
+  transformationComparison: {
+    title: "Structural Transformation: From Frame to Flagship",
+    subtitle:
+      "Inspect the transition from heavy steel framing and site scaffolding to the completed Kaard Commercial Headquarters.",
+    beforeImage: "/assets/gallery/dji-aerial-4.jpg",
+    afterImage: "/assets/hero-flagship-hq.jpg",
+    beforeLabel: "Phase 02 // Structural Masonry & Roof Erection",
+    afterLabel: "Phase 04 // Completed Flagship Commercial HQ",
+    specs: [
+      { label: "Structural Frame", value: "S355 Heavy Structural Steel" },
+      { label: "Glazing System", value: "Double Low-E Acoustic Curtain Wall" },
+      { label: "Safety Index", value: "Zero Lost Time Injuries (LTI)" },
+      { label: "Delivery", value: "Turnkey Handover" },
+    ],
+  },
+
+  workforceStandards: {
+    badge: "WORK FORCE IN WORK WEAR // THE LOOK OF TRUST",
+    title: "Engineering Excellence Driven by Human Precision",
+    description:
+      "A world-class structure begins with a disciplined, empowered site workforce. At Kaard Construction, every engineer, welder, and site supervisor is outfitted with certified high-durability apparel and rigorous safety gear.",
+    bentoCards: [
+      {
+        id: "team",
+        title: "The Kaard Workforce",
+        subtitle: "Collective Discipline & Zero-Incident Culture",
+        description:
+          "Our multi-disciplinary team brings decades of combined expertise in heavy steel fabrication, civil engineering, and architectural contracting.",
+        image: "/assets/workforce-team-hd.jpg",
+        badge: "01 // SQUAD SYNERGY",
+        size: "col-span-12 md:col-span-7",
+        metrics: ["100% Certified PPE", "Daily Toolbox Audits", "Trained Riggers & Welders"],
+      },
+      {
+        id: "female-engineer",
+        title: "Engineered Precision & Fit",
+        subtitle: "Women's Field Leadership & Technical Audits",
+        description:
+          "Female structural engineers and project managers directing active on-site quality assurance, tolerance inspections, and BIM coordination.",
+        image: "/assets/engineer-female-hd.jpg",
+        badge: "02 // QA / QC LEADERSHIP",
+        size: "col-span-12 md:col-span-5",
+        metrics: ["Micron-Level Tolerance", "Active Structural Sign-Off"],
+      },
+      {
+        id: "male-engineer",
+        title: "The Look of Trust",
+        subtitle: "Munyaradzi Hurasha, PMP® // Construction Lead",
+        description:
+          "Led by Construction Lead Munyaradzi Hurasha, PMP®, our engineers wear official Kaard khaki field workwear engineered with breathable back ventilation and multi-pocket utility for rigorous civil engineering and continuous site oversight.",
+        image: "/assets/engineer-male-hd.jpg",
+        badge: "03 // LEADERSHIP // MUNYARADZI HURASHA, PMP®",
+        size: "col-span-12 md:col-span-5",
+        metrics: ["Munyaradzi Hurasha, PMP®", "Civil Site Lead", "Zero-Incident Standard"],
+      },
+      {
+        id: "site-culture",
+        title: "Coffee Mugs of Cause... Because Why Not",
+        subtitle: "The Unofficial Engine of Site Productivity",
+        description:
+          "At Kaard Construction we work hard and refuel even harder with our coffee mugs: an ever-constant presence at every blueprint table and site container.",
+        image: "/assets/site-blueprint-mug-hd.jpg",
+        badge: "04 // SITE CULTURE",
+        size: "col-span-12 md:col-span-7",
+        quote: "Quality, Tried and Tested. Fueling early mornings and late steel handovers.",
+      },
+    ],
+  },
+
+  rfqOptions: {
+    sectors: [
+      { id: "residential", label: "Residential Enclave & Roof Structure" },
+      { id: "commercial", label: "Commercial High-Rise / Office" },
+      { id: "steel", label: "Heavy Structural Steel Fabrication" },
+      { id: "industrial", label: "Industrial Warehousing & Plants" },
+      { id: "civil", label: "Civil Infrastructure & Earthworks" },
+      { id: "fitout", label: "Corporate Turnkey Fit-Out" },
+    ],
+    timelines: [
+      { id: "immediate", label: "Immediate (Within 30 Days)" },
+      { id: "q1-q2", label: "1 – 3 Months" },
+      { id: "q3-q4", label: "3 – 6 Months" },
+      { id: "feasibility", label: "Early Feasibility / Tendering Stage" },
+    ],
+    budgets: [
+      { id: "tier-1", label: "$100,000 – $500,000" },
+      { id: "tier-2", label: "$500,000 – $2,000,000" },
+      { id: "tier-3", label: "$2,000,000 – $10,000,000" },
+      { id: "tier-4", label: "$10,000,000+" },
+    ],
+  },
+};

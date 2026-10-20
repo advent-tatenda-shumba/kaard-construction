@@ -1,0 +1,111 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --color-navy: #0F2C52;
+    --color-steel: #58595B;
+    --color-orange: #E87722;
+    --color-stone: #F6F5F2;
+    --color-carbon: #0B0C0E;
+  }
+
+  html {
+    font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+    color: #0B0C0E;
+    background-color: #F6F5F2;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  /* Custom Smooth Scrollbar */
+  ::-webkit-scrollbar {
+    width: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #0B0C0E;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #58595B;
+    border-radius: 3px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #E87722;
+  }
+}
+
+/* Swiss Architectural Grid Utility */
+.architectural-grid {
+  background-size: 40px 40px;
+  background-image: 
+    linear-gradient(to right, rgba(15, 44, 82, 0.04) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(15, 44, 82, 0.04) 1px, transparent 1px);
+}
+
+.architectural-grid-dark {
+  background-size: 40px 40px;
+  background-image: 
+    linear-gradient(to right, rgba(255, 255, 255, 0.04) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.04) 1px, transparent 1px);
+}
+
+/* Corner Crosshair (+) for 1px Architectural Borders */
+.crosshair-corner {
+  position: relative;
+}
+.crosshair-corner::before {
+  content: "+";
+  position: absolute;
+  top: -10px;
+  left: -8px;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 13px;
+  font-weight: 400;
+  color: #E87722;
+  line-height: 1;
+  pointer-events: none;
+  z-index: 10;
+}
+.crosshair-corner-tr::after {
+  content: "+";
+  position: absolute;
+  top: -10px;
+  right: -8px;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 13px;
+  font-weight: 400;
+  color: #E87722;
+  line-height: 1;
+  pointer-events: none;
+  z-index: 10;
+}
+
+/* Ultra-light Editorial Serif */
+.font-editorial-italic {
+  font-family: 'Newsreader', serif;
+  font-style: italic;
+  font-weight: 200;
+  letter-spacing: -0.02em;
+}
+
+/* Technical Monospace Numbering */
+.font-mono-tech {
+  font-family: 'JetBrains Mono', monospace;
+  letter-spacing: 0.08em;
+}
+
+/* Glassmorphism Classes */
+.glass-panel {
+  background: rgba(246, 245, 242, 0.85);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(15, 44, 82, 0.08);
+}
+
+.glass-panel-dark {
+  background: rgba(11, 12, 14, 0.85);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
