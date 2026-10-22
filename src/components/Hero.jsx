@@ -14,16 +14,22 @@ export default function Hero({ onOpenRfq }) {
       isVideo: false,
     },
     {
-      src: siteContent.hero.secondaryImage,
-      title: "Active Residential Site",
-      label: "Timber Trusses & Sheeting",
+      src: "/assets/projects/greendale/greendale-2.jpg",
+      title: "Greendale Project",
+      label: "Residential Cluster Enclave // Harare",
       isVideo: false,
     },
     {
       src: "/assets/videos/site-aerial-flight.mp4",
-      title: "Drone Aerial Recon",
-      label: "Live 4K Site Video Reel",
+      title: "Kwekwe Poly Project",
+      label: "Live Drone Telemetry // Kwekwe",
       isVideo: true,
+    },
+    {
+      src: "/assets/projects/mall/mall-1.jpg",
+      title: "Mall Project",
+      label: "Commercial Shopping Center // Harare",
+      isVideo: false,
     },
     {
       src: "/assets/site-scaffolding-banner.jpg",

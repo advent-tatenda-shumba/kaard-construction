@@ -6,10 +6,7 @@ import ProjectDossierDrawer from './ProjectDossierDrawer';
 
 const categories = [
   'All',
-  'Residential & Roofing',
-  'Commercial High-Rise',
-  'Industrial & Plants',
-  'Civil Infrastructure',
+  ...Array.from(new Set(siteContent.projects.map((p) => p.category))),
 ];
 
 export default function ProjectPortfolio({ onOpenRfq }) {

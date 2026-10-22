@@ -51,10 +51,10 @@ export default function SiteVideoRecon() {
     <section id="drone-recon" className="relative py-24 sm:py-32 bg-[#0B0C0E] text-white border-b border-neutral-800 architectural-grid-dark overflow-hidden">
       {/* Decorative Blueprint Corner Tag */}
       <div className="absolute top-4 left-4 font-mono-tech text-xs text-[#E87722] select-none pointer-events-none">
-        + [DRONE-TELEMETRY // LIVE 60FPS]
+        + [DRONE-TELEMETRY // KWEKWE POLY PROJECT]
       </div>
       <div className="absolute top-4 right-4 font-mono-tech text-xs text-neutral-500 select-none pointer-events-none">
-        [KAARD AERIAL SURVEILLANCE] +
+        [KAARD AERIAL SURVEILLANCE // ZW-MIDLANDS] +
       </div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">

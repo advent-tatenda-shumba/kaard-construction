@@ -103,6 +103,7 @@ The platform uses a tailored design system governed by industrial and structural
 | **Phase 11** | **Tender Estimator (RFQ) Direct Dispatch** | Built 3-step interactive tender wizard routing directly to WhatsApp (`+263 77 515 7802`) and email (`office@kaardinvestment.co.zw`). | `src/components/RfqDrawer.jsx` |
 | **Phase 12** | **Mother Portal Alignment & Clean Navbar** | Preserved minimalist navbar; anchored parent portal link ([www.kaardinvestments.co.zw](https://www.kaardinvestments.co.zw)) strictly in the footer with ISO credentials. | `Navbar.jsx`, `Footer.jsx` |
 | **Phase 13** | **Git Version Control & Vercel Deployment** | Authored `.gitignore` and `README.md`, committed all source code, and pushed to GitHub main branch. | GitHub `main` Branch Push |
+| **Phase 14** | **Kwekwe Poly, Greendale & Mall Projects Integration** | Configured live drone telemetry explicitly for **Kwekwe Poly Project** (Kwekwe coordinates `18°55'40"S 29°49'02"E`); ingested 10 aerial/ground photos for **Greendale Project** (`public/assets/projects/greendale/`); generated and integrated commercial retail construction template imagery for **Mall Project** (`public/assets/projects/mall/`). Dynamic portfolio categories and 5-feed hero cycle updated. | `siteContent.js`, `Hero.jsx`, `ProjectPortfolio.jsx`, `SiteVideoRecon.jsx` |
 
 ---
 
@@ -132,8 +133,8 @@ C:\Users\user\.gemini\antigravity-ide\scratch\kaard-construction\
 │       ├── site-blueprint-mug-hd.jpg  # Kaard site coffee mug & blueprint desk
 │       ├── site-scaffolding-banner.jpg# High-quality perimeter scaffolding banner
 │       ├── workforce-team-hd.jpg      # Multi-disciplinary rigging & welding squad
-│       ├── gallery/                   # High-resolution native DJI site survey photos
-│       │   ├── dji-aerial-1.jpg       # Residential enclave structural timber framing
+│       ├── gallery/                   # High-resolution native DJI site survey photos (Kwekwe Poly Project)
+│       │   ├── dji-aerial-1.jpg       # Institutional block structural timber framing
 │       │   ├── dji-aerial-2.jpg       # Overhead roofing truss installation
 │       │   ├── dji-aerial-3.jpg       # Brickwork & masonry perimeter walling
 │       │   ├── dji-aerial-4.jpg       # Wide landscape site civil topography
@@ -141,7 +142,16 @@ C:\Users\user\.gemini\antigravity-ide\scratch\kaard-construction\
 │       │   ├── dji-aerial-6.jpg       # Structural steel assembly point
 │       │   ├── dji-aerial-7.jpg       # High-angle roof sheeting inspection
 │       │   └── dji-aerial-8.jpg       # Completed multi-unit roof topology
-│       └── videos/                    # Native 4K/1080p drone flight video reels
+│       ├── projects/                  # Dedicated project asset repositories
+│       │   ├── greendale/             # Greendale Project (10 high-resolution aerial & site photos)
+│       │   │   ├── greendale-1.jpg    # Aerial top-down overview of residential estate
+│       │   │   ├── greendale-2.jpg    # High-angle double-storey brickwork & framing
+│       │   │   └── greendale-3..10.jpg# Ground civil works, boundary walls, rebar lintels
+│       │   └── mall/                  # Mall Project (Commercial shopping center template assets)
+│       │       ├── mall-1.jpg         # Exterior curved structural steel & glass facade
+│       │       ├── mall-2.jpg         # Interior multi-level skylight atrium under construction
+│       │       └── mall-3.jpg         # Aerial regional mall steel framework & parking concourse
+│       └── videos/                    # Native 4K/1080p drone flight video reels (Kwekwe Poly)
 │           ├── site-aerial-flight.mp4 # Cinematic orbit of structural site
 │           ├── site-progress-pan.mp4  # Low-altitude progress tracking pass
 │           ├── site-roofing-drone.mp4 # Flyover of timber trusses & metal sheeting
