@@ -1,9 +1,15 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { X, ArrowUpRight, Video, Calendar, MapPin, Building, Ruler, CheckCircle2 } from 'lucide-react';
 
 export default function ProjectDossierDrawer({ project, isOpen, onClose, onOpenRfq }) {
-  const [activeMedia, setActiveMedia] = useState(0);
+  const [activeMedia, setActiveMedia] = useState('video');
+
+  useEffect(() => {
+    if (project) {
+      setActiveMedia(project.video ? 'video' : 0);
+    }
+  }, [project]);
 
   if (!isOpen || !project) return null;
 
@@ -53,7 +59,7 @@ export default function ProjectDossierDrawer({ project, isOpen, onClose, onOpenR
               {/* Main Photo / Video Display */}
               <div className="space-y-3">
                 <div className="h-72 sm:h-84 rounded overflow-hidden border border-neutral-300 shadow-sm bg-black relative">
-                  {project.video && activeMedia === 0 ? (
+                  {project.video && activeMedia === 'video' ? (
                     <video
                       src={project.video}
                       controls
@@ -64,7 +70,11 @@ export default function ProjectDossierDrawer({ project, isOpen, onClose, onOpenR
                     />
                   ) : (
                     <img
-                      src={project.gallery ? project.gallery[activeMedia] || project.heroImage : project.heroImage}
+                      src={
+                        typeof activeMedia === 'number' && project.gallery && project.gallery[activeMedia]
+                          ? project.gallery[activeMedia]
+                          : project.heroImage
+                      }
                       alt={project.title}
                       className="w-full h-full object-cover"
                     />
@@ -75,10 +85,13 @@ export default function ProjectDossierDrawer({ project, isOpen, onClose, onOpenR
                 <div className="flex items-center gap-2 overflow-x-auto pb-1">
                   {project.video && (
                     <button
-                      onClick={() => setActiveMedia(0)}
+                      onClick={() => setActiveMedia('video')}
                       className={`h-16 w-24 rounded overflow-hidden border shrink-0 relative bg-black transition-all ${
-                        activeMedia === 0 ? 'border-[#E87722] ring-2 ring-[#E87722]/30' : 'border-neutral-300 opacity-70'
+                        activeMedia === 'video'
+                          ? 'border-[#E87722] ring-2 ring-[#E87722]/40'
+                          : 'border-neutral-300 opacity-70 hover:opacity-100'
                       }`}
+                      title="Watch 4K Drone Recon Reel"
                     >
                       <video src={project.video} className="w-full h-full object-cover" />
                       <div className="absolute inset-0 bg-black/40 flex items-center justify-center">
@@ -93,7 +106,9 @@ export default function ProjectDossierDrawer({ project, isOpen, onClose, onOpenR
                         key={i}
                         onClick={() => setActiveMedia(i)}
                         className={`h-16 w-24 rounded overflow-hidden border shrink-0 transition-all ${
-                          activeMedia === i ? 'border-[#E87722] ring-2 ring-[#E87722]/30' : 'border-neutral-300 opacity-70 hover:opacity-100'
+                          activeMedia === i
+                            ? 'border-[#E87722] ring-2 ring-[#E87722]/40'
+                            : 'border-neutral-300 opacity-70 hover:opacity-100'
                         }`}
                       >
                         <img

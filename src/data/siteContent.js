@@ -58,12 +58,10 @@ export const siteContent = {
   },
 
   droneRecon: {
-    badge: "02 // LIVE FIELD TELEMETRY // KWEKWE POLY PROJECT",
-    title: "Kwekwe Poly Project: Real Site Drone Telemetry & Aerial Recon",
+    badge: "02 // LIVE FIELD TELEMETRY // ACTIVE SITES",
+    title: "Real Site Drone Telemetry: Kwekwe Poly & Greendale Projects",
     subtitle:
-      "Continuous aerial telemetry feeds capturing structural institutional masonry, high-bay roof truss placement, and civil earthworks on the active Kwekwe Poly Project.",
-    project: "Kwekwe Poly Project",
-    location: "Kwekwe, Midlands Province, Zimbabwe",
+      "Continuous aerial telemetry feeds capturing structural institutional masonry, residential cluster developments, high-bay roof trusses, and civil earthworks across active Kaard sites.",
     feeds: [
       {
         id: "feed-1",
@@ -75,23 +73,31 @@ export const siteContent = {
       },
       {
         id: "feed-2",
-        label: "02 // Structural Roofing Scan",
+        label: "02 // Greendale Cluster Recon",
+        sublabel: "Greendale Residential Enclave // Harare",
+        src: "/assets/videos/greendale-drone-flight.mp4",
+        telemetry: { alt: "42.5m", speed: "2.4 m/s", gps: "17°49'32\"S 31°07'25\"E", camera: "4K Wide // 60fps" },
+        caption: "Low-altitude 4K aerial sweep over the Greendale residential enclave inspecting double-storey load-bearing masonry, boundary security walls, and civil grading.",
+      },
+      {
+        id: "feed-3",
+        label: "03 // Structural Roofing Scan",
         sublabel: "Kwekwe Poly Project // High-Bay Trussing",
         src: "/assets/videos/site-roofing-drone.mp4",
         telemetry: { alt: "22.0m", speed: "1.8 m/s", gps: "18°55'44\"S 29°49'08\"E", camera: "4K Tele // 60fps" },
         caption: "Low-altitude inspection of dark-slate corrugated roof sheeting, engineered timber trusses, and structural tie-downs at Kwekwe Poly.",
       },
       {
-        id: "feed-3",
-        label: "03 // Site Perimeter Pan",
+        id: "feed-4",
+        label: "04 // Site Perimeter Pan",
         sublabel: "Kwekwe Poly Project // Logistics & Staging",
         src: "/assets/videos/site-progress-pan.mp4",
         telemetry: { alt: "35.2m", speed: "2.6 m/s", gps: "18°55'38\"S 29°49'12\"E", camera: "Wide-Angle // 60fps" },
         caption: "Panoramic sweep of boundary security perimeter, brickstaging bays, and delivery vehicular routing on the Kwekwe Poly site.",
       },
       {
-        id: "feed-4",
-        label: "04 // Civil Foundation Survey",
+        id: "feed-5",
+        label: "05 // Civil Foundation Survey",
         sublabel: "Kwekwe Poly Project // Substructure Grid",
         src: "/assets/videos/site-survey-clip.mp4",
         telemetry: { alt: "29.8m", speed: "2.1 m/s", gps: "18°55'48\"S 29°49'15\"E", camera: "Survey Sensor // 60fps" },
@@ -294,6 +300,7 @@ export const siteContent = {
       tonnage: "850 Tonnes Steel & Trusses",
       sqm: "22,500 m²",
       heroImage: "/assets/projects/greendale/greendale-2.jpg",
+      video: "/assets/videos/greendale-drone-flight.mp4",
       gallery: [
         "/assets/projects/greendale/greendale-2.jpg",
         "/assets/projects/greendale/greendale-1.jpg",

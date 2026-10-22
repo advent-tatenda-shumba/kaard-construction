@@ -14,10 +14,10 @@ export default function Hero({ onOpenRfq }) {
       isVideo: false,
     },
     {
-      src: "/assets/projects/greendale/greendale-2.jpg",
+      src: "/assets/videos/greendale-drone-flight.mp4",
       title: "Greendale Project",
-      label: "Residential Cluster Enclave // Harare",
-      isVideo: false,
+      label: "Live Drone Recon // Harare",
+      isVideo: true,
     },
     {
       src: "/assets/videos/site-aerial-flight.mp4",
